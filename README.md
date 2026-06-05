@@ -35,27 +35,18 @@ This project builds separate machine learning models for different medical featu
 
 ## Project Structure
 
-PCOS_Analytics/
-│
-├── data/
-│   └── PCOS_data.csv
-│
-├── outputs/
-│   ├── risk_scores.csv
-│   └── plots/
-│
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py
-│   ├── model.py
-│   ├── evaluation.py
-│   ├── interpretability.py
-│
-├── config.py
-├── main.py
-├── requirements.txt
-└── README.md
-
+* `data/PCOS_data.csv` — Raw PCOS study dataset
+* `outputs/risk_scores.csv` — Generated patient risk predictions
+* `outputs/plots/` — Data distribution and model performance charts
+* `src/__init__.py` — Package initializer
+* `src/data_loader.py` — Script to handle data loading and preprocessing
+* `src/model.py` — Machine learning model definition and training script
+* `src/evaluation.py` — Validation metrics and model evaluation functions
+* `src/interpretability.py` — Feature importance and SHAP/LIME explanation scripts
+* `config.py` — Global parameters and hyperparameters
+* `main.py` — Central script to run the entire end-to-end pipeline
+* `requirements.txt` — Python dependencies needed to run the project
+* `README.md` — Project documentation and setup guide
 ---
 
 ## Installation
